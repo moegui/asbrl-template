@@ -6,8 +6,14 @@ before_script:
 
 stages:
   - ansible-lint
+  - execute-test
 
 ansible-lint:
   stage: ansible-lint
   script:
     - ansible-lint .
+
+execute-test:
+  stage: execute-test
+  script:
+    - sudo ansible-playbook -i tests/inventory tests/test.yml --connection=local
