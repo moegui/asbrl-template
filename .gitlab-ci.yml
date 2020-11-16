@@ -16,4 +16,4 @@ ansible-lint:
 execute-test:
   stage: execute-test
   script:
-    - sudo ansible-playbook -i tests/inventory tests/test.yml --connection=local
+    - ansible-playbook -i tests/inventory tests/test.yml --connection=local
