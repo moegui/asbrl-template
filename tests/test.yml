@@ -1,0 +1,20 @@
+---
+- name: Deploy
+  hosts: localhost
+  order: sorted
+  become: true
+  
+# Replace asbrl-template for your Role Name
+  pre_tasks:
+
+  - name: copy role locally (DEBUG)
+    copy:
+      src: ../
+      dest: /etc/ansible/roles/asbrl-template
+  
+  tasks:
+
+  - name: Execute role asbrl-template
+    include_role:
+      name: asbrl-template
+#    vars: Declare your mandatory role vars.
