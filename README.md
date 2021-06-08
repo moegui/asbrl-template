@@ -1,4 +1,4 @@
-[![pipeline status](https://gitlab.com/moegui/devops/asbrl-template/badges/master/pipeline.svg)](https://gitlab.com/moegui/devops/asbrl-template/commits/master)
+[![pipeline status](https://gitlab.com/gianet/moegui/devops/asbrl-template/badges/master/pipeline.svg)](https://gitlab.com/gianet/moegui/devops/asbrl-template/commits/master)
 
 Role Name
 =========
